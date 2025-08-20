@@ -13,7 +13,6 @@ This project focuses on cross-domain ship detection, aiming to improve model gen
 - ** Domain Adaptation**: Utilizes transfer learning or domain adaptation methods to enhance detection performance on diverse datasets.
 - ** Multiple Model Support**: Integrates popular object detection models (e.g., YOLO, Faster R-CNN).
 - ** Flexible Data Processing**: Supports various remote sensing and surveillance data formats with built-in data augmentation and preprocessing.
-- **🚀End-to-End Training & Evaluation**: One-click training scripts and evaluation process for quick reproduction and experiment comparison.
 
 ---
 
