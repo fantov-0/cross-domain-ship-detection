@@ -1,0 +1,4 @@
+path: data/SSDD
+train: images/train
+val: images/val
+names: [ship]

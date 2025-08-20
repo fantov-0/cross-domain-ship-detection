@@ -1,0 +1,6 @@
+path: C:/Users/Gyhsh/DGship/data/HRSC2016
+train: images/train
+val: images/val
+
+names:
+  0: ship

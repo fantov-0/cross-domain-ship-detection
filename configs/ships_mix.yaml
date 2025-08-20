@@ -1,0 +1,9 @@
+train:
+  - C:/Users/Gyhsh/DGShip/data/HRSC2016/images/train
+  - C:/Users/Gyhsh/DGShip/data/SSDD/images/train
+val:
+  - C:/Users/Gyhsh/DGShip/data/HRSC2016/images/val
+  - C:/Users/Gyhsh/DGShip/data/SSDD/images/val
+
+names:
+  0: ship
