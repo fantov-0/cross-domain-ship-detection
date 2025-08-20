@@ -2,29 +2,81 @@
 Reproducible implementation and experiments for cross-domain ship detection using HRSC2016, SSDD, and YOLO-based models.
 # Cross-Domain Ship Detection with Optical and SAR Imagery
 
-## 📌 Description
-This project implements a cross-domain ship detection framework that leverages both **optical** and **synthetic aperture radar (SAR)** imagery.  
-The approach aims to improve generalization across diverse maritime scenarios by combining datasets from multiple domains, resolutions, and imaging conditions.  
-The repository includes reproducible code, pre-processing workflows, and experiment configurations.
+# 🚢 cross-domain-ship-detection 🌏
 
-## ✨ Key Features
-- Supports both optical and SAR image modalities  
-- Cross-domain training for improved detection robustness  
-- Configurable data pipelines for dataset fusion  
-- Reproducible experiment setup with fixed seeds and documented hyperparameters  
-- Evaluation scripts with performance metrics and error analysis  
-- LaTeX templates for academic reporting
+This project focuses on cross-domain ship detection, aiming to improve model generalization across different data distributions. It provides a complete workflow including data preprocessing, model training, evaluation, and deployment, suitable for remote sensing imagery, port surveillance, and other scenarios.
 
-## 🛠 Requirements
-- Python 3.8 or higher  
-- PyTorch 1.10 or higher  
-- CUDA-capable GPU (RTX-class recommended)  
-- Linux or Windows OS  
+---
 
+## ✨ Features
 
-## 🚀 Installation
+- ** Domain Adaptation**: Utilizes transfer learning or domain adaptation methods to enhance detection performance on diverse datasets.
+- ** Multiple Model Support**: Integrates popular object detection models (e.g., YOLO, Faster R-CNN).
+- ** Flexible Data Processing**: Supports various remote sensing and surveillance data formats with built-in data augmentation and preprocessing.
+- **🚀End-to-End Training & Evaluation**: One-click training scripts and evaluation process for quick reproduction and experiment comparison.
 
-python -m venv venv
-source venv/bin/activate  # Linux / macOS
-venv\Scripts\activate     # Windows
+---
+
+## 🛠️ Requirements
+
+-  Python >= 3.7
+-  PyTorch or TensorFlow (depending on implementation)
+-  OpenCV
+-  Other dependencies can be found in `requirements.txt`
+
+---
+
+## ⚡ Installation
+
+```bash
+git clone https://github.com/Fantov-0/cross-domain-ship-detection.git
+cd cross-domain-ship-detection
 pip install -r requirements.txt
+```
+
+---
+
+## 🚦 Usage
+
+1. **Prepare Data**: Organize source and target domain data in the `data/` directory as required.
+2. **Configure Parameters**: Edit `config.yaml` or relevant scripts to fit your experiment settings.
+3. **Train Model**:
+
+   ```bash
+   python train.py --config config.yaml
+   ```
+
+4. **Evaluate Model**:
+
+   ```bash
+   python eval.py --model checkpoints/best_model.pth
+   ```
+
+5. **Analyze Results**: Outputs detection results and metrics, supports visualization.
+
+---
+
+## 📁 Project Structure
+
+```
+cross-domain-ship-detection/
+├── data/                # Dataset directory
+├── models/              # Model definitions
+├── scripts/             # Training and evaluation scripts
+├── utils/               # Utility functions and preprocessing
+├── config.yaml          # Configuration file
+├── requirements.txt     # Dependency file
+├── README.md            # Project description
+```
+
+---
+
+## 🤝 Contribution
+
+Feel free to open issues or pull requests to help improve and expand the project.
+
+---
+
+## 📬 Contact
+
+For questions or collaboration, please reach out via GitHub Issues.
