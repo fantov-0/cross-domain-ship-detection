@@ -11,7 +11,7 @@ This project focuses on cross-domain ship detection, aiming to improve model gen
 ## ✨ Features
 
 - ** Domain Adaptation**: Utilizes transfer learning or domain adaptation methods to enhance detection performance on diverse datasets.
-- ** Multiple Model Support**: Integrates popular object detection models (e.g., YOLO, Faster R-CNN).
+- ** Multiple Model Support**: Integrates popular object detection models 
 - ** Flexible Data Processing**: Supports various remote sensing and surveillance data formats with built-in data augmentation and preprocessing.
 
 ---
@@ -19,7 +19,7 @@ This project focuses on cross-domain ship detection, aiming to improve model gen
 ## 🛠️ Requirements
 
 -  Python >= 3.7
--  PyTorch or TensorFlow (depending on implementation)
+-  PyTorch
 -  OpenCV
 -  Other dependencies can be found in `requirements.txt`
 
@@ -41,17 +41,11 @@ pip install -r requirements.txt
 2. **Configure Parameters**: Edit `config.yaml` or relevant scripts to fit your experiment settings.
 3. **Train Model**:
 
-   ```bash
-   python train.py --config config.yaml
-   ```
+  yolo train data="cfg/ships_mix.yaml" model=yolov8n.pt \
 
-4. **Evaluate Model**:
 
-   ```bash
-   python eval.py --model checkpoints/best_model.pth
-   ```
 
-5. **Analyze Results**: Outputs detection results and metrics, supports visualization.
+4. **Analyze Results**: Outputs detection results and metrics, supports visualization.
 
 ---
 
@@ -70,12 +64,4 @@ cross-domain-ship-detection/
 
 ---
 
-## 🤝 Contribution
 
-Feel free to open issues or pull requests to help improve and expand the project.
-
----
-
-## 📬 Contact
-
-For questions or collaboration, please reach out via GitHub Issues.
